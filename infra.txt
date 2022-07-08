@@ -1,0 +1,3 @@
+internet --> firewall front (pfsense) --> DMZ : server WEB-MAIL (nginx + postfix + dovecot + rainloop)--
+--> firewall back (netfilter + squid) --> Core : routeur + DHCP ( isc-dhcp-server + config router) -----
+--> Lan (DNS + NTP + Supervision + server fichier + glpi)

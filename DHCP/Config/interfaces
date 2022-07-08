@@ -1,0 +1,125 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+#allow-hotplug enp0s3
+#iface enp0s3 inet dhcp
+
+allow-hotplug enp0s3
+iface enp0s3 inet manual
+
+# vlan 5
+auto enp0s3.5
+iface enp0s3.5 inet static
+	vlan-raw-device enp0s3
+	address 192.168.0.206/28
+	broadcast 192.168.0.207
+	network 192.168.0.192
+	dns-nameservers 192.168.0.205
+#	gateway 192.168.0.206
+
+###################
+
+allow-hotplug enp0s8
+iface enp0s8 inet manual
+
+# vlan 4
+auto enp0s8.4
+iface enp0s8.4 inet static
+	vlan-raw-device enp0s8
+	address 192.168.0.190/27
+	broadcast 192.168.0.191
+	network 192.168.0.160
+	dns-nameservers 192.168.0.189
+#	gateway 192.168.0.190
+
+# vlan 6
+auto enp0s8.6
+iface enp0s8.6 inet static
+	vlan-raw-device enp0s8
+	address 192.168.0.222/28
+	broadcast 192.168.0.223
+	network 192.168.0.208
+	dns-nameservers 192.168.0.221
+	#gateway 192.168.0.222
+
+# vlan 9
+auto enp0s8.9
+iface enp0s8.9 inet static
+	vlan-raw-device enp0s8
+	address 192.168.0.254/29
+	broadcast 192.168.0.255
+	network 192.168.0.248
+	dns-nameservers 192.168.0.253
+	#gateway 192.168.0.254
+
+##############################
+
+allow-hotplug enp0s9
+iface enp0s9 inet manual
+
+# vlan 10
+auto enp0s9.10
+iface enp0s9.10 inet static
+	vlan-raw-device enp0s9
+	address 192.168.1.254/24
+	broadcast 192.168.1.255
+	network 192.168.1.0
+	dns-nameservers 192.168.1.253
+	#gateway 192.168.1.254
+
+#############################
+
+allow-hotplug enp0s10
+iface enp0s10 inet manual
+
+# vlan 3
+auto enp0s10.3
+iface enp0s10.3 inet static
+	vlan-raw-device enp0s10
+	address 192.168.0.158/27
+	broadcast 192.168.0.159
+	network 192.168.0.128
+	dns-nameservers 192.168.0.157
+	#gateway 
+
+# vlan 7
+auto enp0s10.7
+iface enp0s10.7 inet static
+	vlan-raw-device enp0s10
+	address 192.168.0.238/28
+	broadcast 192.168.0.239
+	network 192.168.0.224
+	dns-nameservers 192.168.0.237
+	#gateway 192.168.0.238
+
+# vlan 8
+auto enp0s10.8
+iface enp0s10.8 inet static
+	vlan-raw-device enp0s10
+	address 192.168.0.246/29
+	broadcast 192.168.0.247
+	network 192.168.0.240
+	dns-nameservers 192.168.0.245
+	#gateway 192.168.0.246
+
+#############################
+
+allow-hotplug enp0s16
+iface enp0s16 inet manual
+
+# vlan 2
+auto enp0s16.2
+iface enp0s16.2 inet static
+	vlan-raw-device enp0s16
+	address 192.168.0.126/25
+	broadcast 192.168.0.127
+	network 192.168.0.0
+	dns-nameservers 192.168.0.125
+	#gateway 192.168.0.126

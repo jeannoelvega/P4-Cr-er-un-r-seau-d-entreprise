@@ -1,0 +1,25 @@
+127.0.0.1	localhost
+127.0.1.1	SRV-DHCP-core
+192.168.0.189	ns.mon-entreprise.com
+192.168.0.189	SRV-DNS-NTP
+192.168.0.205	ns.mon-entreprise.com
+192.168.0.205	SRV-DNS-NTP
+192.168.0.221	ns.mon-entreprise.com
+192.168.0.221	SRV-DNS-NTP
+192.168.0.253	ns.mon-entreprise.com
+192.168.0.253	SRV-DNS-NTP
+192.168.1.253	ns.mon-entreprise.com
+192.168.1.253	SRV-DNS-NTP
+192.168.0.157	ns.mon-entreprise.com
+192.168.0.157	SRV-DNS-NTP
+192.168.0.237	ns.mon-entreprise.com
+192.168.0.237	SRV-DNS-NTP
+192.168.0.245	ns.mon-entreprise.com
+192.168.0.245	SRV-DNS-NTP
+192.168.0.125	ns.mon-entreprise.com
+192.168.0.125	SRV-DNS-NTP
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
